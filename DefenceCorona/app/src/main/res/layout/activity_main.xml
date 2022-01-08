@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".MainActivity">
+            <ImageView
+                android:onClick="mypro"
+                android:id="@+id/MainIntPic01"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/defcorona_non_akranto" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAFAFA"
+        android:layout_below="@id/MainIntPic01">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAFAFA"
+        android:id="@+id/rel3"
+        >
+
+
+
+
+
+
+        <RelativeLayout
+            android:background="#FAFAFA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:id="@+id/rel4"
+            >
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:layout_weight="0"
+                android:background="@drawable/aboutcorona"
+                android:onClick="gotoaboutcorona"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"/>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_centerVertical="true"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:layout_toRightOf="@id/btn1"
+                android:layout_weight="0"
+                android:background="@drawable/lokkhonoprotirodh"
+                android:onClick="gotosym"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                />
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAFAFA"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:id="@+id/rel5"
+            android:layout_below="@id/rel4"
+            >
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_centerVertical="true"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:background="@drawable/desh"
+                android:layout_weight="0"
+                android:onClick="gotoaffectedcountries"
+                android:layout_marginRight="2dp"                android:layout_marginTop="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_centerVertical="true"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:layout_toRightOf="@id/btn3"
+                android:layout_weight="0"
+                android:background="@drawable/covidupdate"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:onClick="CoronaUpdate"
+
+
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAFAFA"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:id="@+id/rel16"
+            android:layout_below="@id/rel5"
+            >
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_centerVertical="true"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:background="@drawable/covodnews"
+                android:layout_weight="0"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                android:onClick="News"
+
+
+                />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_centerVertical="true"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:layout_toRightOf="@id/btn5"
+                android:layout_weight="0"
+                android:background="@drawable/gujob"
+                android:layout_marginLeft="2dp"
+                android:onClick="Gujob"
+                android:layout_marginTop="2dp"
+
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAFAFA"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:layout_margin="5dp"
+            android:id="@+id/rel17"
+            android:layout_below="@id/rel16"
+            >
+
+
+
+            <ImageView
+                android:id="@+id/mujibpic"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#FAFAFA"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/mujib"
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAFAFA"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:id="@+id/rel80"
+            android:layout_below="@id/rel17"
+            >
+
+            <Button
+                android:id="@+id/btn70"
+                android:layout_centerVertical="true"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:background="@drawable/plasmablood"
+                android:layout_weight="0"
+                android:layout_marginRight="2dp"
+                android:onClick="plasma"
+                android:layout_marginTop="2dp"
+
+                />
+
+            <Button
+                android:id="@+id/btn80"
+                android:layout_centerVertical="true"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:layout_toRightOf="@id/btn70"
+                android:layout_weight="0"
+                android:background="@drawable/vupdate"
+                android:layout_marginLeft="2dp"
+                android:onClick="vc"
+                android:layout_marginTop="2dp"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAFAFA"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:id="@+id/rel8"
+            android:layout_below="@id/rel80"
+            >
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_centerVertical="true"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:background="@drawable/lockdownarea"
+                android:layout_weight="0"
+                android:layout_marginRight="2dp"
+                android:onClick="LockdownArea"
+                android:layout_marginTop="2dp"
+
+                />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_centerVertical="true"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:layout_toRightOf="@id/btn7"
+                android:layout_weight="0"
+                android:background="@drawable/lockdownkoroniyo"
+                android:layout_marginLeft="2dp"
+                android:onClick="LockdownTrix"
+                android:layout_marginTop="2dp"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAFAFA"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:id="@+id/rel9"
+            android:layout_below="@id/rel8"
+            >
+
+            <Button
+
+                android:id="@+id/btn9"
+                android:layout_centerVertical="true"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:background="@drawable/akrantohoolekoroniyo"
+                android:layout_weight="0"                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:onClick="akrantoKoronioyu"
+                />
+
+            <Button
+                android:id="@+id/btn10"
+                android:layout_centerVertical="true"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:layout_toRightOf="@id/btn9"
+                android:layout_weight="0"
+                android:layout_marginLeft="2dp"                 android:layout_marginTop="2dp"
+                android:background="@drawable/sebatutorial"
+                android:onClick="SebaTutorial"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAFAFA"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:id="@+id/rel10"
+            android:layout_below="@id/rel9"
+            >
+
+            <Button
+                android:id="@+id/btn11"
+                android:layout_centerVertical="true"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:background="@drawable/nearesthospital"
+                android:layout_weight="0"                android:layout_marginTop="2dp"
+                android:onClick="NearestHospital"
+                android:layout_marginRight="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn12"
+                android:layout_centerVertical="true"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:layout_toRightOf="@id/btn11"
+                android:layout_weight="0"
+                android:background="@drawable/seccha"
+                android:onClick="NearestSeccha"                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAFAFA"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:id="@+id/rel11"
+            android:layout_below="@id/rel10"
+            >
+
+            <Button
+                android:id="@+id/btn13"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:layout_weight="0"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/suggestion"
+                android:onClick="chat"
+                android:layout_marginRight="2dp"/>
+
+            <Button
+                android:id="@+id/btn14"
+                android:layout_centerVertical="true"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:layout_toRightOf="@id/btn13"
+                android:layout_weight="0"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/medicinereminder"
+                android:onClick="MedecineREminder"
+                android:layout_marginLeft="2dp"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAFAFA"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:id="@+id/rel12"
+            android:layout_below="@id/rel11"
+            >
+
+            <Button
+                android:id="@+id/btn16"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:layout_weight="0"
+                android:background="@drawable/covidfighterstory"
+                android:onClick="CovFighter"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn17"
+                android:layout_centerVertical="true"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:layout_toRightOf="@id/btn16"
+                android:layout_weight="0"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/sustho"
+                android:layout_marginLeft="2dp"
+                android:onClick="Sustho"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAFAFA"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:id="@+id/rel13"
+            android:layout_below="@id/rel12"
+            >
+
+            <Button
+                android:id="@+id/btn18"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:layout_weight="0"
+                android:background="@drawable/died"
+                android:onClick="DiedVIP"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"/>
+
+            <Button
+                android:id="@+id/btn19"
+                android:layout_centerVertical="true"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:layout_toRightOf="@id/btn18"
+                android:layout_weight="0"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/dieddoctors"
+                android:layout_marginLeft="2dp"
+                android:onClick="DeiedDoctors"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAFAFA"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:id="@+id/rel14"
+            android:layout_below="@id/rel13"
+            >
+
+            <Button
+                android:id="@+id/btn20"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:layout_weight="0"
+                android:background="@drawable/sbadanerjonnoreq"
+                android:onClick="SebaRQ"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
+                />
+
+            <Button
+                android:id="@+id/btn21"
+                android:layout_centerVertical="true"
+                android:layout_width="165dp"
+                android:layout_height="97dp"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:layout_toRightOf="@id/btn20"
+                android:layout_weight="0"
+                android:background="@drawable/feedback"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:onClick="Feedback"/>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

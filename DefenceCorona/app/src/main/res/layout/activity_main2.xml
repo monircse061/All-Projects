@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+
+    <ScrollView
+        android:id="@+id/malik"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+
+    <ImageView
+        android:id="@+id/img01"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/upcover"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/welcome"
+        android:layout_below="@+id/img01"
+        android:id="@+id/img02"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/uname"
+        android:layout_below="@+id/img02"
+        android:id="@+id/img03"/>
+        <EditText
+            android:id="@+id/et01"
+            android:layout_marginLeft="5dp"
+            android:layout_width="250dp"
+            android:inputType="text"
+            android:layout_height="60dp"
+            android:background="@drawable/gap"
+            android:gravity="center"
+            android:layout_below="@id/img03"
+            />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/yourage"
+            android:layout_below="@+id/et01"
+            android:id="@+id/img030"/>
+        <EditText
+            android:id="@+id/et02"
+            android:layout_width="250dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_height="60dp"
+            android:background="@drawable/gap"
+            android:layout_below="@id/img030"
+
+            />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:scaleType="fitStart"
+        android:translationX="-5dp"
+        android:src="@drawable/upic"
+        android:layout_below="@+id/et02"
+        android:id="@+id/img05"/>
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:scaleType="fitStart"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/selectimg"
+        android:layout_below="@+id/img05"
+        android:id="@+id/img06"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/phnno"
+        android:layout_below="@+id/img06"
+        android:id="@+id/img07"/>
+        <EditText
+            android:id="@+id/img08"
+            android:layout_marginLeft="5dp"
+            android:layout_width="250dp"
+            android:inputType="number"
+            android:layout_height="60dp"
+            android:background="@drawable/gap"
+            android:gravity="center"
+            android:layout_below="@id/img07"
+            />
+
+
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sharelocation"
+        android:layout_below="@+id/img08"
+        android:id="@+id/img09"/>
+    <RelativeLayout
+        android:id="@+id/rel0001"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/img09">
+        <CheckBox
+            android:id="@+id/checkbox01"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/text01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="হ্যাঁ"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/checkbox01"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel0002"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/img09"
+        android:layout_toRightOf="@id/rel0001">
+        <CheckBox
+            android:id="@+id/checkbox02"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/text02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="না"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/checkbox02"
+            />
+    </RelativeLayout>
+
+<ImageView
+    android:id="@+id/loginbutton"
+    android:layout_below="@id/rel0002"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="70dp"
+    android:src="@drawable/login"
+    android:onClick="gotomain"
+    />
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+</ScrollView>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/seenet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9E9E9E"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:src="@drawable/splash"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:padding="08dp"
+            android:layout_marginBottom="20dp"
+            android:text="দুঃখিত, অনুগ্রহ করে আপনার মোবাইলের ইন্টারনেট কানেকশন সচল করে রিফ্রেশ করুন "/>
+        <Button
+            android:id="@+id/refreshbutton"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="রিফ্রেশ"
+            android:background="#4CAF50"
+            android:textColor="#FFFFFF"/>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Chat">
+
+    <ProgressBar
+        android:id="@+id/progressBarId"
+        android:progressTint="#467AFF"
+        android:progressBackgroundTint="#D8DFFF"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_margin="0dp"
+        style="@style/Widget.AppCompat.ProgressBar"
+        />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:id="@+id/Rel"
+        android:visibility="gone"
+        android:orientation="vertical"
+        >
+
+
+
+
+
+
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/seenet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#9E9E9E"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:src="@drawable/splash"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:padding="08dp"
+                android:layout_marginBottom="20dp"
+                android:text="দুঃখিত, অনুগ্রহ করে আপনার মোবাইলের ইন্টারনেট কানেকশন সচল করে রিফ্রেশ করুন "/>
+            <Button
+                android:id="@+id/refreshbutton"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="রিফ্রেশ"
+                android:background="#4CAF50"
+                android:textColor="#FFFFFF"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
